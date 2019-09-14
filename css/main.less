@@ -1,0 +1,283 @@
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+
+body {
+	background-color: #0e004c;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: "Arial", Arial, sans-serif;
+	color: black;
+}
+
+img {
+	border: none;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.events_venue{
+	color: #0e004c;
+	font-weight: bold;
+}
+
+.floatright_cyanborder{
+	float: right;
+	border-bottom: 10px solid #0a70fa;
+}
+
+.floatleft{
+	float: left;
+	margin-right: 10px;
+}
+
+#pif_container {
+	width: 1024px;
+	height: auto;
+	margin:0px auto;
+	background-color: white;
+	background-image: url(../images/pif_container.gif);
+	background-repeat: repeat-y;
+}
+
+
+#content_container {
+	width: 568px;
+	height: auto;
+	margin: 0px 228px 10px 228px;
+	padding-top: 10px;
+	background-color: white;
+}
+
+#pif_heading{
+	width: 568px;
+	height: 86px;
+	float: left;
+}
+
+#heading_cyan {
+	float: left;
+	width: 568px;
+	height: 42px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-image: url(../images/heading_cyan.gif);
+}
+
+#heading_cyan_title {
+	width: 568px;
+	height: 30px;
+	padding-top: 12px;
+	padding-left: 12px;
+	color: white;
+	font-size: 24px;
+	font-weight:bold;
+}
+
+#heading_yellow {
+	float: left;
+	width: 568px;
+	height: 42px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-image: url(../images/heading_yellow.gif);
+}
+
+#heading_yellow_title {
+	width: 568px;
+	height: 30px;
+	padding-top: 12px;
+	padding-left: 12px;
+	color: #0e004c;
+	font-size: 24px;
+	font-weight:bold;
+}
+
+#upcoming_events_all{
+	width: 536px;
+	height: 198px;
+}
+
+
+#upcoming_events_left{
+	width: 400px;
+	height: 198px;
+}
+
+#upcoming_events_right{
+	width: 120px;
+	height: 180px;
+	margin-top: 10px;
+	float: right;
+}
+
+#upcoming_events_header{
+	width: 400px;
+	height: 30px;
+	background-image: url(../images/upcoming_events_header.gif);
+	text-align: left;
+	font-size: 16px;
+	font-weight:bold;
+	color: white;
+  span {
+    padding-left: 20px;
+  }
+}
+
+#upcoming_events_content{
+	width: 350px;
+	height: 138px;
+	margin:0px auto;
+}
+
+#upcoming_events_footer_yellow{
+	width: 400px;
+	height: 10px;
+	background-color: #ffd205;
+
+}
+
+#upcoming_events_footer_cyan{
+	width: 400px;
+	height: 10px;
+	background-color: #0a70fa;
+
+}
+
+/********************************************************
+* RJH Updates
+********************************************************/
+@content_section_width: 568px;
+
+.blue { color: blue; }
+.italics { font-style: italic; }
+
+.clear { clear:both; }
+
+#nav_section {
+    width: 568px;
+    height: 25px;
+    padding-top: 12px;
+    margin:0px;
+    background-color: #ffffff;
+    float:left;
+    font-size: 13px;
+    text-align: center;
+    color: #cf1721;
+    font-weight: bold;
+    a {
+        color: #cf1721;
+        text-decoration: none;
+    }
+    a#current {
+        color: #0a70fa;
+        border-bottom: 10px solid #ffd205;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #0a70fa;
+        border-bottom: 10px solid #ffd205;
+        text-decoration: none;
+    }
+}
+
+#content_section {
+  width: 536px;
+  height:auto;
+  margin:0px auto;
+  a {
+      color: #0a70fa;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  a:hover {
+      border-bottom: thin solid #cf1721;
+      text-decoration: none;
+      background-color: #ffd205;
+      font-weight: bold;
+  }
+
+  #madison-benefit {
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0px;
+    }
+    p { font-size: 125%; }
+
+    div.twoColumn#brm-sponsor {
+      div.right div {
+        // margin: 0 auto;
+        img { height: 50%; width: 50%; }
+      }
+    }
+  }
+}
+
+
+.twoColumn{
+	width: @content_section_width;
+	.left{
+		float: left;
+		width: @content_section_width / 2 - 4px;
+    margin: 2px;
+	}
+	.right{
+		float: right;
+		width: @content_section_width / 2 - 4px;
+    margin: 2px;
+	}
+}
+
+footer.twoColumn{
+	height: 125px;
+	padding-top: 15px;
+	margin-top: 15px;
+	border-top: 2px solid black;
+	.left{
+		height: 120px;
+		text-align: left;
+		font-size: 11px;
+		line-height: 13px;
+		img{
+			float: left;
+		}
+	}
+	.right{
+		form{
+			width: auto;
+			float: right;
+			margin-top: 25px;
+		}
+	}
+}
+
+#valuesList.twoColumn {
+	height: 300px;
+}
+
+#contactPage.twoColumn {
+	height: 500px;
+}
+
+#mediaPage {
+  h3 {
+    text-align: center;
+    margin-right: 90px;
+  }
+}
+
+@mcHeight: 428px;
+@mcWidth: @content_section_width;
+.mediaCarousel{
+	height: mcHeight;
+	min-width: @mcWidth;
+	max-width: @mcWidth;
+	border: 1px solid black;
+	* img{
+		min-width: @mcWidth;
+		max-width: @mcWidth;
+		height: @mcHeight;
+	}
+}
+
